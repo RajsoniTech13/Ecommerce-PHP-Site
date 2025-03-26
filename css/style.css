@@ -1,0 +1,228 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* bg-colors */
+.bg-black{
+    background: #000;
+}
+.bg-sdnv{
+    background: #5e76fc8e;
+}
+.text-white{
+    color: aliceblue;
+}
+.btn-info{
+    background-color: rgb(6, 6, 25);
+    color: aliceblue;
+    border: 0   ;
+}
+.cart-img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+}
+.card-img-top{
+    width:100%;
+    height:200px;
+    object-fit: contain;
+}
+/* logo */
+/* Navigation Bar: Logo and Image */
+.title{
+    font-size:30px;
+    color: gold;
+    margin-right: 400px;
+    font-family: 'Baloo Bhai', cursive;
+}
+#logo{
+    margin-left: 20px ;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 10px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    padding: 1%;
+    /* padding-top: 7px; */
+    /* padding-bottom:7px ; */
+    z-index: 1;
+    /* box-shadow: 2px red ; */
+}
+
+
+#navbar::before{
+    
+    border-radius:0px 0px 40px 40px;
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+/* Navigation Bar: Logo and Image */
+.title{
+    font-size:30px;
+    color: gold;
+    margin:0;
+    /* margin-right: 400px; */
+    font-family: 'Baloo Bhai', cursive;
+}
+/* #logo{
+    margin-left: 20px ;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 10px;
+} */
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    margin: auto;
+    /* justify-content: center; */
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+  
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;        
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* mid text */
+.midtext{
+    font-size: 25px;
+    /* size: 25%; */
+    text-align: center;
+    color: aliceblue;
+    /* font-weight: bold; */
+    font-family: 'Bree Serif', serif; 
+    margin-top: 20%;
+}
+
+/* home image */
+.slider-header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+      url("../img/bg-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+}
+/* changeing */
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    background-color: aliceblue;
+
+ 
+
+    color:rgb(17, 1, 109);
+    
+
+  }
+
+  
+  @keyframes changetext {
+    0% {
+      content: "Brands";
+    }
+    
+    35% {
+      content: "Variety";
+    }
+    80% {
+      content: "Offers";
+    }
+    100% {
+      content: "Discounts";
+    }
+  }
+
+
+  .long-text{
+    width: 70ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+ /* .carousel-item img{
+        width: 100%;
+        height: 50%;
+        
+ } */
+
+
+
+
+
+
+
+
+ /* Order css */
+ @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    
+    .horizontal-timeline .items {
+    border-top: 2px solid #ddd;
+    }
+    
+    .horizontal-timeline .items .items-list {
+    position: relative;
+    margin-right: 0;
+    }
+    
+    .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    top: 0;
+    margin-top: -5px;
+    }
+    
+    .horizontal-timeline .items .items-list {
+    padding-top: 15px;
+    }

@@ -1,0 +1,6 @@
+@media screen {
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+}
